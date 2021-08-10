@@ -4,9 +4,9 @@ public class RoundTenth {
 
     public static void main(String[] args)
     {
-        Scanner scan = new Scanner(System.in);
-        System.out.print("Decimal number? ");
-        double num = scan.nextDouble();
+        // Create a Scanner object
+
+        // Prompt the user for a positive decimal number
 
 
         /*Use an expression to calculate

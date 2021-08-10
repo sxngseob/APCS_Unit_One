@@ -8,8 +8,8 @@
 public class TimeAndDate {
 
     public static void main(String[] args) {
-        //output current time
-        //output current date
+        // Output the date and time for dismissal on the last day of school
+
     }
 
 }

@@ -24,6 +24,5 @@ public class Sentence {
 
         //third output statement
 
-        System.out.print("It is a great\ntime to be a\ncomputer programmer!");
     }
 }

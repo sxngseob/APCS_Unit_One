@@ -47,14 +47,6 @@ class Unit1_1Tests_old {
         assertEquals(expect, outContent.toString(), "Check your spelling and punctuation?");
     }
 
-    @Test
-    @Order(5)
-    void Sentence2Test() {
-        String[] args = null;
-        String expect = "It is a great time to be a computer programmer!";
-        Sentence2.main(args);
-        assertEquals(expect, outContent.toString(), "Check your spelling and punctuation?");
-    }
 
     @Test
     @Order(2)

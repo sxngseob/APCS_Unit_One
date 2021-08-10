@@ -30,33 +30,6 @@ class Unit1_1Tests_old {
 
 
     @Test
-    @Order(3)
-    void TimeAndDateTest() {
-            String[] args = null;
-            TimeAndDate.main(args);
-            assertEquals("11:59pm\n09/04/2020\n", outContent.toString(), "Check your output");
-    }
-
-
-    @Test
-    @Order(4)
-    void SentenceTest() {
-        String[] args = null;
-        String expect = "It is a great\ntime to be a\ncomputer programmer!";
-        Sentence.main(args);
-        assertEquals(expect, outContent.toString(), "Check your spelling and punctuation?");
-    }
-
-
-    @Test
-    @Order(2)
-    void NameAndSchoolTest() {
-        String[] args = null;
-        NameAndSchool.main(args);
-        assertTrue(outContent.toString().contains("Sandy Spring Friends School"), "Don't abbreviate the school.");
-    }
-
-    @Test
     @Order(11)
     void RoundNegativesTest() throws IOException {
         String[] args = null;
@@ -77,41 +50,6 @@ class Unit1_1Tests_old {
         assertTrue(outContent.toString().contains("19.851 rounded to the nearest tenth is 19.9"));
     }
 
-    @Test
-    @Order(6)
-    void ExpressionsWithLiteralsTest() {
-        String[] args = null;
-        String expect = "-3\n-29\n-3.0\n26\n28.5\n6\n6.9\n2\n19\n8\n";
-        ExpressionsWithLiterals.main(args);
-        assertEquals(expect, outContent.toString(), "Check to make sure the problems match the lab");
-    }
-
-    @Test
-    @Order(7)
-    void RectangleAreaTest() {
-        String[] args = null;
-        String expect = "Area = 84\n";
-        RectangleArea.main(args);
-        assertEquals(expect, outContent.toString(), "Output should be \"Area = \" then the answer");
-    }
-
-    @Test
-    @Order(8)
-    void PoundsToKilogramsTest() {
-        String[] args = null;
-        String expect = "115.0 pounds = 52.15419501133787 kilograms\n";
-        PoundsToKilograms.main(args);
-        assertEquals(expect, outContent.toString(), "Both variables should be doubles");
-    }
-
-    @Test
-    @Order(9)
-    void TotalWithTaxTest() {
-        String[] args = null;
-        String expect = "Price: $52.75\n" + "Sales Tax: $4.351875000000001\n" + "Total: $51.101875\n";
-        TotalWithTax.main(args);
-        assertEquals(expect, outContent.toString(), "Are all of your calculations correct?");
-    }
 
     @Test
     @Order(10)

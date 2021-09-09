@@ -28,6 +28,28 @@ public class UserInputTests {
     }
 
     @Test
+    void dateFormatOpeningDay() throws IOException {
+        System.setIn(new FileInputStream("data_files/uidateone.txt"));
+        DateFormat.main(null);
+        String expected = "American Format:\n" +
+                "Tuesday, August 31, 2021\n" +
+                "European Format:\n" +
+                "Tuesday, 31 August, 2021";
+        assertTrue(outContent.toString().contains(expected), "");
+    }
+
+    @Test
+    void dateFormatLastDay() throws IOException {
+        System.setIn(new FileInputStream("data_files/uidatetwo.txt"));
+        DateFormat.main(null);
+        String expected = "American Format:\n" +
+                "Thursday, June 10, 2022\n" +
+                "European Format:\n" +
+                "Thursday, 10 June, 2022";
+        assertTrue(outContent.toString().contains(expected), "");
+    }
+
+    @Test
     void correctChangeExample() throws IOException {
         System.setIn(new FileInputStream("data_files/uione.txt"));
         CorrectChange.main(null);

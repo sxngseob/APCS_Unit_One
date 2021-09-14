@@ -74,7 +74,7 @@ public class UserInputTests {
     void separatingDigitsDecending() throws IOException {
         System.setIn(new FileInputStream("data_files/uifour.txt"));
         SeparatingDigits.main(null);
-        assertTrue(outContent.toString().contains("8 6 7 5 4"), "");
+        assertTrue(outContent.toString().contains("8 7 6 5 4"), "");
     }
 
 

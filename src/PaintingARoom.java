@@ -18,7 +18,7 @@ public class PaintingARoom {
         System.out.print("Enter the height (ft): ");
         double height = scan.nextDouble();
 
-        //# of door and window
+        //user-input for # of door and window
         System.out.print("Enter the number of door: ");
         int numberDoor = scan.nextInt();
         System.out.print("Enter the number of window: ");
@@ -35,8 +35,9 @@ public class PaintingARoom {
         double totalArea = (2 * area1) + (2 * area2) + ceiling - (areaDoor + areaWindow);
 
         //paint (door and window do not need to be painted)
-        double paintNeed = totalArea / paint;
-        int roundPaintNeed = (int) paintNeed + 1;
+        double paintNeed1 = totalArea / paint;
+        double paintNeed2 = (int) (paintNeed1 * 10);
+        int roundPaintNeed = (int) ((paintNeed2 + 10 - 1)/10);
 
         //Print
         System.out.println("You need " + roundPaintNeed + " gallon(s) of paint");
